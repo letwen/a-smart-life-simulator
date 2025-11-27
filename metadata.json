@@ -1,0 +1,5 @@
+{
+  "name": "Infinite Life Simulator",
+  "description": "An AI-powered text-based life simulator with multiple worlds (Modern, Cultivation, Sci-Fi, Mythology). Experience infinite unique events generated dynamically.",
+  "requestFramePermissions": []
+}
