@@ -116,12 +116,19 @@ export const generateNextYear = async (
        - Mid stats (20-50) = Level 5-10 (Heroic).
        - High stats (50-100+) = Level 11-20 (Legendary/Demigod).
 
-    **World Transitions**:
-    - You represent Destiny. You can shift the genre based on events (approx 2-5% chance/year).
-    - MODERN -> CULTIVATION: Finding a ring, Reiki revival.
-    - MODERN -> SCIFI: AI Singularity, Cybernetic experiment.
-    - MODERN -> MYTHOLOGY: Gods return.
-    - If a transition happens, set 'newWorld' in the JSON response.
+    **World Transitions (Genre Shift / 奇遇)**:
+    - **DEFAULT**: Stay in the current world. Do not change worlds unless necessary.
+    - **TRIGGER**: A transition occurs ONLY if the user encounters a specific "Key" or "Anomaly" (奇遇).
+    - **Examples of Triggers**:
+       - MODERN -> CULTIVATION: Finding a dusty jade slip in an antique shop; Stumbling into a misty valley; The moon turns red.
+       - MODERN -> SCIFI: A glitch in the sky; Being abducted by a UFO; Neural link experiment gone wrong.
+       - MODERN -> MYTHOLOGY: Breaking a seal in a museum; Meeting an old beggar who is actually a God.
+    - **Probability**: 
+       - Standard: Very Low (0.5% - 1%).
+       - If 'Wealth' (Luck) > 8: Low (2%).
+       - **If Narrator/Chat Context implies it**: HIGH (Forces the transition).
+    - **Logic**: If a transition happens, describe the discovery/trigger event vividly, and set 'newWorld' to the target genre.
+
   `;
 
   try {
